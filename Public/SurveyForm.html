@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Page title of the survey form</h1>
+      <p id="description">This is a short explanation for the survey form</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+      <label id="name-label">Your Name:</label>
+      <input required id="name" name="text" type="text" placeholder="Enter Your Name">
+      <label id="email-label">Your Email:</label>
+      <input required id="email" type="email" placeholder="your@email.com">
+      <label id="number-label">Your Age:</label>
+      <input type="number" id="number" min="5" max="100" placeholder="69"><br>
+    </fieldset>
+    <fieldset>
+      <legend>Pick an option</legend>
+      <label for="options">Pick an option</label>
+      <select id="dropdown">
+        <option>Option 1</option>
+        <option>Option 2</option>
+      </select>
+    </fieldset>
+      <fieldset>
+        <legend>Select one of the two</legend>
+          <label for="option1">Option 1</label>
+          <input type="radio" id="option1" name="options" value="option1">
+          <label for="option2">Option 2</label>
+          <input type="radio" id="option" name="options" value="option2">
+      </fieldset>
+    <fieldset>
+      <legend>Checkboxes</legend>
+      <label>Checkbox 1</label>
+      <input type="checkbox" value="checkbox1">
+      <label>Checkbox 2</label>
+      <input type="checkbox" value="checkbox2">
+      <label>Checkbox 3</label>
+      <input type="checkbox" value="checkbox3">
+      <label>Checkbox 4</label>
+      <input checked type="checkbox" value="checkbox4">
+      </fieldset>
+    <fieldset>
+      <legend>Additional Comments</legend>
+      <textarea cols="90" rows="10">
+        </textarea>
+      </fieldset>
+    <button id="submit">Submit form</button>
+      </form>
+  </body>
+</html>
